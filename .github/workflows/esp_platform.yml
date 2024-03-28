@@ -14,10 +14,10 @@ jobs:
           ./install.sh esp32
           . ~/esp/esp-idf/export.sh
           echo "Github home is here:"
-          echo $GITHUB_WORKSPACE
+          echo ${{ runner.workspace }}
           ls
           pwd
-          cd $GITHUB_WORKSPACE
+          cd ${{ runner.workspace }}
           idf.py build
           echo "Hello  World!"
           echo "Done - bye!"
