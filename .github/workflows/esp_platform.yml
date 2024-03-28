@@ -13,7 +13,8 @@ jobs:
           cd ~/esp/esp-idf
           ./install.sh esp32
           . ~/esp/esp-idf/export.sh
-          echo $$GITHUB_WORKSPACE
+          echo "Github home is here:"
+          echo $GITHUB_WORKSPACE
           ls
           pwd
           cd $GITHUB_WORKSPACE
