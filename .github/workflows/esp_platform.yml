@@ -20,7 +20,7 @@ jobs:
           . ~/esp/esp-idf/export.sh
           echo "Github home is here:"
           echo ${{ runner.workspace }}
-          cd ${{ runner.workspace }}
+          cd $GITHUB_WORKSPACE
           ls
           idf.py build
       - name: Build
