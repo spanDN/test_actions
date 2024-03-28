@@ -13,5 +13,7 @@ jobs:
           cd ~/esp/esp-idf
           ./install.sh esp32
           . ~/esp/esp-idf/export.sh
+          cd $GITHUB_WORKSPACE
+          idf.py build
           echo "Hello  World!"
           echo "Done - bye!"
