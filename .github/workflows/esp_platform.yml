@@ -20,7 +20,7 @@ jobs:
           #. ~/esp/esp-idf/export.sh
           cd iot-platform-esp32/esp/esp-idf
           ./install.sh esp32
-          . ~/esp/esp-idf/export.sh
+          . ./export.sh
           echo "Github home is here:"
           echo ${{ runner.workspace }}
           cd $GITHUB_WORKSPACE
