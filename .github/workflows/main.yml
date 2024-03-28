@@ -17,3 +17,12 @@ jobs:
         esp_idf_version: v5.2.1
         target: esp32
         path: ''
+    - name: Upload Artifacts
+      uses: actions/upload-artifact@v4
+      with:
+        name: dist-files
+        path: |
+          build/blink.bin
+          build/partition_table/partition-table.bin
+          build/bootloader/bootloader.bin
+          sdkconfig
