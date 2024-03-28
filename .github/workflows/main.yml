@@ -12,7 +12,7 @@ jobs:
         submodules: 'recursive'
         token: ${{ secrets.ACCESS_TOKEN }}
     - name: esp-idf build
-      uses: espressif/esp-idf-ci-action@v1
+      uses: espressif/esp-idf-ci-action@v4
       with:
         esp_idf_version: v5.2.1
         target: esp32
