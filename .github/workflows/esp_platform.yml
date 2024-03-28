@@ -15,9 +15,9 @@ jobs:
           . ~/esp/esp-idf/export.sh
           echo "Github home is here:"
           echo ${{ runner.workspace }}
-          ls
-          pwd
-          cd ${{ runner.workspace }}
+      - name: Build
+        run: |
           idf.py build
+          working-directory: ${{ runner.workspace }}     
           echo "Hello  World!"
           echo "Done - bye!"
