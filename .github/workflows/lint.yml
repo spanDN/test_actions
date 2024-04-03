@@ -1,8 +1,6 @@
 name: Lint
 
-on:  # yamllint disable-line rule:truthy
-  push: null
-  pull_request: null
+on: workflow_dispatch
 
 jobs:
   build:
@@ -32,3 +30,8 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           VALIDATE_CPP: 'true'
           CREATE_LOG_FILE: 'true'
+        - name: Upload log
+        uses: actions/upload-artifact@v4
+        with:
+          name: dist-files
+          path: super-linter.log
