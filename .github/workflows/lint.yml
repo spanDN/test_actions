@@ -31,6 +31,7 @@ jobs:
           CREATE_LOG_FILE: 'true'
       - name: Upload log
         uses: actions/upload-artifact@v4
+        if: always()
         with:
             name: dist-files
             path: super-linter.log
