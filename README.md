@@ -67,3 +67,5 @@ The pixel number indicates the pixel position in the LED strip. For a single LED
 * If the LED isn't blinking, check the GPIO or the LED type selection in the `Example Configuration` menu.
 
 For any technical queries, please open an [issue](https://github.com/espressif/esp-idf/issues) on GitHub. We will get back to you soon.
+
+[![Super-Linter](https://github.com/spanDN/test_actions/actions/workflows/lint.yml/badge.svg)](https://github.com/marketplace/actions/super-linter)
